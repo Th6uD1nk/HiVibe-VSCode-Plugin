@@ -1,0 +1,32 @@
+{
+  "name": "hvibe",
+  "displayName": "HighVibe",
+  "description": "Syntax highlighting and basic support for the HighVibe DSL",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.110.0" },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "hvibe",
+        "aliases": ["HighVibe", "hvibe"],
+        "extensions": [".hvibe"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "hvibe",
+        "scopeName": "source.hvibe",
+        "path": "./syntaxes/hvibe.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "HighVibe Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/hvibe-color-theme.json"
+      }
+    ]
+  }
+}

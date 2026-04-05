@@ -1,0 +1,66 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "scopeName": "source.hvibe",
+  "name": "HighVibe",
+  "patterns": [
+    { "include": "#catalogKeys" },
+    { "include": "#otherKeys" },
+    { "include": "#templateStrings" },
+    { "include": "#doubleStrings" },
+    { "include": "#keywords" },
+    { "include": "#numbers" },
+    { "include": "#punctuation" }
+  ],
+  "repository": {
+    "catalogKeys": {
+      "patterns": [
+        {
+          "name": "variable.other.catalog.hvibe",
+          "match": "\\b(catalog|logic|code|rules|obligations|constraints|tests)\\b(?=\\s*:)"
+        }
+      ]
+    },
+    "otherKeys": {
+      "patterns": [
+        {
+          "name": "variable.other.key.hvibe",
+          "match": "\\b(hvibe_version|app|description|stack|features|inputs|directives|blueprints|depends_on|feature|when)\\b(?=\\s*:)"
+        }
+      ]
+    },
+    "templateStrings": {
+      "name": "string.quoted.template.hvibe",
+      "begin": "`",
+      "end": "`",
+      "patterns": [
+        { "name": "constant.character.escape.hvibe", "match": "\\\\." },
+        { "name": "keyword.control.hvibe", "match": "\\b(MUST BE|MUST ALWAYS|MUST NEVER|OTHERWISE)\\b" }
+      ]
+    },
+    "doubleStrings": {
+      "name": "string.quoted.double.hvibe",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        { "name": "constant.character.escape.hvibe", "match": "\\\\." }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        { "name": "keyword.control.hvibe", "match": "\\b(MUST BE|MUST ALWAYS|MUST NEVER|OTHERWISE)\\b" }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        { "name": "constant.numeric.hvibe", "match": "\\b\\d+\\b" }
+      ]
+    },
+    "punctuation": {
+      "patterns": [
+        { "name": "punctuation.brace.hvibe", "match": "[{}\\[\\]]" },
+        { "name": "punctuation.separator.hvibe", "match": "[:,]" }
+      ]
+    }
+  }
+}
+

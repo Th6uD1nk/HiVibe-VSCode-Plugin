@@ -1,0 +1,40 @@
+{
+  "name": "HighVibe Theme",
+  "type": "dark",
+  "colors": {},
+  "tokenColors": [
+    {
+      "scope": "variable.other.catalog.hvibe",
+      "settings": { "foreground": "#00FF00" }
+    },
+    {
+      "scope": "variable.other.key.hvibe",
+      "settings": { "foreground": "#569CD6" }
+    },
+    {
+      "scope": "string.quoted.double.hvibe",
+      "settings": { "foreground": "#9CDCFE" }
+    },
+    {
+      "scope": "string.quoted.template.hvibe",
+      "settings": { "foreground": "#CE9178" }
+    },
+    {
+      "scope": "keyword.control.hvibe",
+      "settings": { "foreground": "#D16969" }
+    },
+    {
+      "scope": "constant.numeric.hvibe",
+      "settings": { "foreground": "#B5CEA8" }
+    },
+    {
+      "scope": "punctuation.separator.hvibe",
+      "settings": { "foreground": "#D4D4D4" }
+    },
+    {
+      "scope": "punctuation.brace.hvibe",
+      "settings": { "foreground": "#D4D4D4" }
+    }
+  ]
+}
+
